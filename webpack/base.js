@@ -6,6 +6,8 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { ReactLoadablePlugin } from 'react-loadable/webpack';
 import { mapValues, keyBy, filter } from 'lodash';
+import fs from 'fs';
+import lessToJs from 'less-vars-to-js';
 import { _moduleAliases } from '../package.json';
 import babelOpts from './babel.config.client';
 import {
@@ -17,7 +19,8 @@ import {
 
 const isDev = process.env.NODE_ENV === 'development';
 const cwd = process.cwd();
-
+// ANT-Design customization
+const themeVariables = lessToJs(fs.readFileSync(path.join(__dirname, '../common/css/ant-theme-vars.less'), 'utf8'));
 if (isDev) {
   require('dotenv').load();
 }
@@ -159,6 +162,25 @@ export default {
             loader: 'url-loader',
             options: {
               limit: 10240
+            }
+          }
+        ]
+      },
+      // ANT-Design
+      {
+        test: /antd.*\.less$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              javascriptEnabled: true,
+              modifyVars: themeVariables
             }
           }
         ]

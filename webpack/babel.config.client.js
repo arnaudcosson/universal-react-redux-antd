@@ -18,11 +18,16 @@ export default {
     'transform-class-properties',
     'transform-export-extensions',
     'transform-object-rest-spread',
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",
+      "style": true
+    }],
     'syntax-dynamic-import',
     [
       'lodash',
       {
-        id: ['lodash', 'semantic-ui-react']
+        id: ['lodash']
       }
     ]
   ],
