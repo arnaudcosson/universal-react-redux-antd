@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List } from 'semantic-ui-react';
+import { List } from 'antd';
 import { TodoItem } from '@components/todos';
 import classnames from 'classnames';
 import css from './index.scss';
@@ -9,7 +9,7 @@ const TodoList = props => {
   const { className, onChange, onRemove, todos: { todos } } = props;
 
   return (
-    <List divided className={classnames(css.todos, className)}>
+    <List className={classnames(css.todos, className)}>
       {todos.map((todo, idx) => (
         <TodoItem
           key={idx}

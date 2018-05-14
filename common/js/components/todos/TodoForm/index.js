@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Form } from 'semantic-ui-react';
+import { Form } from 'antd';
 import classnames from 'classnames/bind';
 import css from './index.scss';
 

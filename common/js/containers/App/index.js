@@ -1,20 +1,23 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
-import { Container } from 'semantic-ui-react';
 import { Header, Footer, RouteWithSubRoutes } from '@components/common';
 import { hot } from 'react-hot-loader';
+import { Layout } from 'antd';
 import routes from '@routes';
 
+const { Content } = Layout;
 const App = () => (
-  <Container fluid={false}>
+  <Layout className="layout">
     <Header />
-    <Switch>
-      {routes.map(route => (
-        <RouteWithSubRoutes key={route.path} {...route} />
-      ))}
-    </Switch>
+    <Content style={{ padding: '0 50px' }}>
+      <Switch>
+        {routes.map(route => (
+          <RouteWithSubRoutes key={route.path} {...route} />
+        ))}
+      </Switch>
+    </Content>
     <Footer />
-  </Container>
+  </Layout>
 );
 
 export default hot(module)(App);

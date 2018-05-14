@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { fetchTodos, addTodo, toggleTodo, removeTodo } from '@actions/todos';
-import { Container } from 'semantic-ui-react';
+import { Layout } from 'antd';
 import { TodoList, TodoForm } from '@components/todos';
+
+const { Content } = Layout;
 
 class TodosContainer extends Component {
   static propTypes = {
@@ -45,7 +47,7 @@ class TodosContainer extends Component {
     const title = 'Todo List';
 
     return (
-      <Container>
+      <Content>
         <Helmet>
           <title>{title}</title>
         </Helmet>
@@ -56,7 +58,7 @@ class TodosContainer extends Component {
           onChange={this.checkTodo}
         />
         <TodoForm onSubmit={this.submitTodo} />
-      </Container>
+      </Content>
     );
   }
 }

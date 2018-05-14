@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, Checkbox, Button } from 'semantic-ui-react';
+import { List, Checkbox, Button } from 'antd';
 import classnames from 'classnames/bind';
 import css from './index.scss';
 
@@ -11,19 +11,19 @@ const TodoItem = props => {
 
   return (
     <List.Item className={classnames(css.todo, css.extra)}>
-      <List.Content floated="right">
-        <Button onClick={() => onRemove(id)} icon="remove" size="mini" />
-      </List.Content>
-      <List.Content floated="left">
+      
+        <Button onClick={() => onRemove(id)} icon="remove" size="small" />
+      
+      
         <Checkbox
           type="checkbox"
           checked={completed}
           onChange={() => onChange(id)}
         />
-      </List.Content>
-      <List.Content className={cx(css.text, { [css.completed]: completed })}>
+      
+      <div className={cx(css.text, { [css.completed]: completed })}>
         {text}
-      </List.Content>
+      </div>
     </List.Item>
   );
 };

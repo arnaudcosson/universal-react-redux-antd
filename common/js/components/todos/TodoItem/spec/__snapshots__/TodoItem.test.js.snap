@@ -11,7 +11,7 @@ exports[`TodoItem renders correctly 1`] = `
       as="button"
       icon="remove"
       onClick={[Function]}
-      size="mini"
+      size="small"
     />
   </ListContent>
   <ListContent
