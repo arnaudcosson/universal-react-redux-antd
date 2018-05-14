@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Affix, Layout, Row, Col, Menu } from 'antd';
 import css from './index.scss';
 const { Header } = Layout;
@@ -19,7 +19,7 @@ class HeaderView extends Component {
             Make business travel an amazing experience
             </Col>
             <Col span={4}>
-              <h1><img src="assets/icon-menu.png" alt="Tepee Pro Couching" className={css.logo} /></h1>
+              <h1><Link to="/"><img src="assets/icon-menu.png" alt="Tepee Pro Couching" className={css.logo} /></Link></h1>
             </Col>
             <Col span={10}>
               <Menu 
