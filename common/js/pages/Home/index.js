@@ -25,7 +25,7 @@ class HomePage extends Component {
         <Button type="primary">Test</Button>
         <Icon type="link" />
         <RangePicker
-          defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+          defaultValue={[moment(), moment().add(1, 'days')]}
           format={dateFormat}
         />
         <Breadcrumb>
