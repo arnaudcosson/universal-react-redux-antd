@@ -7,6 +7,7 @@ const { Header } = Layout;
 const menuItems = [
   { name: 'Home', to: '/', exact: 'true' },
   { name: 'Pricing', to: '/pricing', exact: 'true' },
+  { name: 'Legal Notice', to: '/legal', exact: 'true' },
 ];
 
 class HeaderView extends Component {
@@ -27,7 +28,9 @@ class HeaderView extends Component {
                 >
                 {menuItems.map(item => (
                   <Menu.Item {...item} key={item.name}>
-                    {item.name}
+                    <Link to={item.to}>
+                      {item.name}
+                    </Link>
                   </Menu.Item>
                 ))}
               </Menu>
