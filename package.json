@@ -24,7 +24,7 @@
     "@lib": "common/js/lib",
     "@middleware": "common/js/middleware",
     "@pages": "common/js/pages",
-    "@reducers": "common/js/services/reducer",
+    "@reducers": "common/js/reducers",
     "@routes": "common/js/routes",
     "@store": "common/js/store",
     "@translations": "common/js/translations",
