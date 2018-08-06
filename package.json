@@ -116,7 +116,7 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^8.6.5",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
@@ -147,7 +147,7 @@
     "dotenv-webpack": "^1.5.7",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.1.0",
     "eslint-plugin-babel": "^5.1.0",
@@ -156,7 +156,7 @@
     "extract-text-webpack-plugin": "^4.0.0-alpha.0",
     "file-loader": "^1.1.11",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.4.3",
+    "jest": "^22.4.4",
     "less": "^3.8.0",
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.4.1",
@@ -186,6 +186,7 @@
     "yn": "^2.0.0"
   },
   "dependencies": {
+    "accept-language": "^3.0.18",
     "antd": "^3.5.1",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
