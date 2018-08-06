@@ -19,7 +19,7 @@
     "@actions": "common/js/actions",
     "@services": "common/js/services",
     "@components": "common/js/components",
-    "@constants": "common/js/constants", 
+    "@constants": "common/js/constants",
     "@containers": "common/js/containers",
     "@lib": "common/js/lib",
     "@middleware": "common/js/middleware",
