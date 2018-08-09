@@ -9,8 +9,8 @@
     "url": "https://github.com/arnaudcosson/universal-react-redux-antd.git"
   },
   "engines": {
-    "node": "8.x.x",
-    "npm": "5.2.x"
+    "node": "8.9.4",
+    "npm": "6.2.0"
   },
   "_moduleAliases": {
     "@css": "common/css",
