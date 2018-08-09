@@ -1,4 +1,4 @@
-# Universal React Redux Boilerplate
+# Universal React Redux Antd Boilerplate
 
 A universal React/Redux boilerplate with sensible defaults. Out of the box, this
 boilerplate comes with:
@@ -11,7 +11,7 @@ boilerplate comes with:
 - Routing with [react-router-v4](https://github.com/ReactTraining/react-router)
 - Full production builds that do not rely on `babel-node`.
 - Pre-configured testing tools with `jest` and `enzyme` to work with css modules, static files, and aliased module paths.
-- Integrate [Ant Design] (https://ant.design/)
+- Integrate [Ant Design](https://ant.design/)
 
 ## Philosophy
 
