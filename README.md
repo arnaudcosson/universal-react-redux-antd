@@ -1,4 +1,4 @@
-# Universal React Redux Boilerplate
+# Universal React Redux Antd Boilerplate
 
 A universal React/Redux boilerplate with sensible defaults. Out of the box, this
 boilerplate comes with:
