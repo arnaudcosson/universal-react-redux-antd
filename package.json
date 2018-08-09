@@ -27,6 +27,7 @@
     "@routes": "common/js/routes",
     "@store": "common/js/store",
     "@templates": "server/templates",
+    "@translations": "common/js/translations",
     "@config": "config",
     "$api": "server/api",
     "$lib": "server/lib",
