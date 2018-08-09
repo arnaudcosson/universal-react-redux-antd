@@ -165,7 +165,7 @@
     "postcss-csso": "^3.0.0",
     "postcss-loader": "^2.1.6",
     "prettier-eslint": "^8.8.2",
-    "react-hot-loader": "4.3.4",
+    "react-hot-loader": "^4.3.4",
     "react-transform-catch-errors": "^1.0.2",
     "redbox-react": "^1.6.0",
     "redux-logger": "^3.0.6",
