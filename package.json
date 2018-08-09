@@ -187,9 +187,9 @@
   },
   "dependencies": {
     "accept-language": "^3.0.18",
-    "antd": "^3.5.1",
+    "antd": "^3.8.0",
     "axios": "^0.18.0",
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "chokidar": "^2.0.4",
     "classnames": "^2.2.6",
     "compression": "^1.7.3",
