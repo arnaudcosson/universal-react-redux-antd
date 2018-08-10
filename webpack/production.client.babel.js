@@ -7,8 +7,8 @@ import config from '../config';
 
 export default merge(baseConfig, {
   output: {
-    filename: '[name].[hash].js',
-    chunkFilename: config.enableDynamicImports ? '[name].[hash].js' : undefined
+    filename: '[name].[contenthash].js',
+    chunkFilename: config.enableDynamicImports ? '[name].[contenthash].js' : undefined
   },
   optimization: {
     splitChunks: {
